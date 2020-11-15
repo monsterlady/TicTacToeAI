@@ -18,7 +18,7 @@ The project is based on the two tutorials from youtube (link below) and AI class
 So far the player would always be the first, might add feature that choose who would be the first in the future, but it doesn't really matter in this case as player can not beat this AI.
 
 ### 1- How to Make Tic Tac Toe in Unity
-Link: https://www.bookstack.cn/read/shenjun-unity/98.md
+Link: https://www.youtube.com/watch?v=Vmit7UDs_sU
 
 ### 2- Coding Challenge 154: Tic Tac Toe AI with Minimax Algorithm
 
