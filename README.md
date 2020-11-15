@@ -35,7 +35,7 @@ I hope those could be useful !.
 Ruikang Xu
 
 
-### ✨ [WebGL](https://monsterlady.github.io/TicTacToeAI/)
+### ✨ [WebGL Demo](https://monsterlady.github.io/TicTacToeAI/)
 ![avatar](https://github.com/monsterlady/TicTacToeAI/blob/main/Assets/tictactoedemo.gif)
 
 ## Comments
