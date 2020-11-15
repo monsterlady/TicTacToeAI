@@ -36,7 +36,7 @@ Ruikang Xu
 
 
 ### ✨ [WebGL](https://monsterlady.github.io/TicTacToeAI/)
-![avatar](https://github.com/monsterlady/Cube3D/blob/main/CubeTrans/demo.gif)
+![avatar](https://github.com/monsterlady/TicTacToeAI/blob/main/Assets/tictactoedemo.gif)
 
 ## Comments
 
