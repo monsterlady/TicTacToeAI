@@ -147,49 +147,7 @@ public class GameStateController : MonoBehaviour
         }
         return b;
     }
-
-    // public string CheckWinner(Text[] board)
-    // {
-    //     String result = "";
-    //     if (board[0].text == playerTurn && board[1].text == playerTurn && board[2].text == playerTurn)
-    //     {
-    //         result = playerTurn;
-    //     }
-    //     else if (board[3].text == playerTurn && board[4].text == playerTurn && board[5].text == playerTurn)
-    //     {
-    //         result = playerTurn;
-    //     }
-    //     else if (board[6].text == playerTurn && board[7].text == playerTurn && board[8].text == playerTurn)
-    //     {
-    //         result = playerTurn;
-    //     }
-    //     else if (board[0].text == playerTurn && board[3].text == playerTurn && board[6].text == playerTurn)
-    //     {
-    //         result = playerTurn;
-    //     }
-    //     else if (board[1].text == playerTurn && board[4].text == playerTurn && board[7].text == playerTurn)
-    //     {
-    //         result = playerTurn;
-    //     }
-    //     else if (board[2].text == playerTurn && board[5].text == playerTurn && board[8].text == playerTurn)
-    //     {
-    //         result = playerTurn;
-    //     }
-    //     else if (board[0].text == playerTurn && board[4].text == playerTurn && board[8].text == playerTurn)
-    //     {
-    //         result = playerTurn;
-    //     }
-    //     else if (board[2].text == playerTurn && board[4].text == playerTurn && board[6].text == playerTurn)
-    //     {
-    //         result = playerTurn;
-    //     }
-    //     else if (moveCount >= 9)
-    //     {
-    //         result = "D";
-    //     }
-    //     return result;
-    // }
-
+    
     /// <summary>
     /// Changes the internal tracker for whos turn it is
     /// </summary>

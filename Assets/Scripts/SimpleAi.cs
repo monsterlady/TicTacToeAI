@@ -1,4 +1,10 @@
-﻿using System;
+﻿///-----------------------------------------------------------------
+///   Class:          SimpleAI
+///   Description:    Find the best move using MinMax algorithm
+///   Author:         Ruikang Xu
+///   GitHub:         https://github.com/monsterlady
+///-----------------------------------------------------------------
+using System;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,8 +39,8 @@ public class SimpleAI : MonoBehaviour
          private int MaxMinAlgorithm(Text[] currentboard,int depth,bool isMax)
          {
              String result = gameController.CheckWinner(currentboard);
-             //Debug.Log("深度: " + depth + " 结果: " + result);
              //如果不是下一轮就返回score
+             //return score it's available
              if (!result.Equals("TURN"))
              {
                  return Score(result);
@@ -45,7 +51,6 @@ public class SimpleAI : MonoBehaviour
                  int bestScore = int.MinValue;
                  for (int i = 0; i < currentboard.Length; i++)
                  {
-                     //空位
                      if (currentboard[i].text.Equals(""))
                      {
                          currentboard[i].text = "O";
@@ -61,7 +66,6 @@ public class SimpleAI : MonoBehaviour
                  int bestScore = int.MaxValue;
                  for (int i = 0; i < currentboard.Length; i++)
                  {
-                     //空位
                      if (currentboard[i].text.Equals(""))
                      {
                          currentboard[i].text = "X";
@@ -83,15 +87,11 @@ public class SimpleAI : MonoBehaviour
 
              for (int i = 0; i < board.Length; i++)
              {
-                 //空位置
+                 //Empty Position
                  if (board[i].text.Equals(""))
                  {
-                     // Test
-                     // bestTileName = GetTileByIndex(i);
-                     // break;
-                      board[i].text = "O";
+                     board[i].text = "O";
                       int tempScore = MaxMinAlgorithm(board,  0,false);
-                      //Debug.Log(tempScore + " 分数");
                       board[i].text = "";
                       if (tempScore > bestScore)
                       {
@@ -101,9 +101,9 @@ public class SimpleAI : MonoBehaviour
                  }
              }
              
-            //选择完毕之后
+            //After choose
             GameObject bestChoice = GameObject.Find(bestTileName);
-            //模拟点击事件
+            //simulate the click event
             bestChoice.GetComponent<TileController>().UpdateTile();
         }
 

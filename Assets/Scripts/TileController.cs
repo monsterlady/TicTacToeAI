@@ -22,13 +22,13 @@ public class TileController : MonoBehaviour
     /// </summary>
     public void UpdateTile()
     {
-        //更新字符
+        //updating bufffer
         internalText.text = gameController.GetPlayersTurn();
-        //更新图片
+        //updating image
         interactiveButton.image.sprite = gameController.GetPlayerSprite();
-        //更改状态
+        //updating status
         interactiveButton.interactable = false;
-        //检查是否结束游戏
+        //check if the game is over
         gameController.EndTurn();
     }
 
